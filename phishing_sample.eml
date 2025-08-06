@@ -1,0 +1,89 @@
+
+Return-Path: <noreply@microsft-securityteam.com>
+Delivered-To: user@company.com
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com [209.85.220.41])
+        by mx.google.com with ESMTPS id a25si1234567sot.25.2024.08.06.10.30.45
+        for <user@company.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Tue, 06 Aug 2024 10:30:45 -0700 (PDT)
+Received: by mail-sor-f41.google.com with SMTP id a123mr5678901sot.25.1691330000000;
+        Tue, 06 Aug 2024 10:30:45 -0700 (PDT)
+X-Received: by 2002:a05:6602:1234:: with SMTP id a123mr5678901sot.25.1691330000000;
+        Tue, 06 Aug 2024 10:30:45 -0700 (PDT)
+Return-Path: <noreply@microsft-securityteam.com>
+Received: from suspicious-mail-server.example.net (suspicious-mail-server.example.net [192.168.1.100])
+        by mail.google.com with ESMTP id abc123si456def789.25.2024.08.06.10.30.44
+        for <user@company.com>;
+        Tue, 06 Aug 2024 10:30:44 -0700 (PDT)
+Received-SPF: fail (google.com: domain of noreply@microsft-securityteam.com does not designate 192.168.1.100 as permitted sender) client-ip=192.168.1.100;
+Authentication-Results: mx.google.com;
+       dkim=fail reason="signature verification failed" header.i=@microsft-securityteam.com header.s=default header.b=Invalid123;
+       spf=fail (google.com: domain of noreply@microsft-securityteam.com does not designate 192.168.1.100 as permitted sender) smtp.mailfrom=noreply@microsft-securityteam.com;
+       dmarc=fail (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=microsoft.com
+Message-ID: <20240806103044.123456@microsft-securityteam.com>
+Date: Tue, 06 Aug 2024 10:30:44 -0700
+From: "Microsoft Security Team" <noreply@microsft-securityteam.com>
+Reply-To: urgent-security@microsft-securityteam.com
+To: user@company.com
+Subject: [URGENT] Your Microsoft Account Security Alert - Immediate Action Required
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+X-Mailer: PHPMailer 6.0.0
+X-Originating-IP: [192.168.1.100]
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Microsoft Security Alert</title>
+</head>
+<body style="font-family: Arial, sans-serif; margin: 0; padding: 20px;">
+    <div style="max-width: 600px; margin: 0 auto; background: white;">
+        <!-- Microsoft logo -->
+        <div style="text-align: center; padding: 20px 0;">
+            <img src="https://suspicious-site.example.net/microsoft-logo.png" alt="Microsoft" style="height: 40px;">
+        </div>
+
+        <div style="background: #f4f4f4; padding: 20px; border-radius: 5px;">
+            <h2 style="color: #d13438; margin: 0 0 15px 0;">⚠️ URGENT SECURITY ALERT</h2>
+
+            <p>Dear Valued Customer,</p>
+
+            <p>We have detected <strong>suspicious login attempts</strong> on your Microsoft account from the following location:</p>
+
+            <div style="background: white; padding: 15px; margin: 15px 0; border-left: 4px solid #d13438;">
+                <strong>IP Address:</strong> 203.0.113.45<br>
+                <strong>Location:</strong> Unknown Location, Russia<br>
+                <strong>Time:</strong> 2024-08-06 10:15:32 UTC<br>
+                <strong>Device:</strong> Unknown Windows Device
+            </div>
+
+            <p style="color: #d13438;"><strong>Your account will be temporarily locked in 24 hours</strong> unless you verify your identity immediately.</p>
+
+            <p>To secure your account and prevent unauthorized access, please click the button below to verify your identity:</p>
+
+            <div style="text-align: center; margin: 30px 0;">
+                <a href="https://microsft-account-security.example.net/verify?token=abc123xyz789" style="background: #0078d4; color: white; padding: 15px 30px; text-decoration: none; border-radius: 5px; display: inline-block; font-weight: bold;">Verify Account Now</a>
+            </div>
+
+            <p><strong>If you do not recognize this activity:</strong></p>
+            <ul>
+                <li>Click the verification link above immediately</li>
+                <li>Change your password as soon as possible</li>
+                <li>Enable two-factor authentication</li>
+            </ul>
+
+            <p style="font-size: 12px; color: #666; margin-top: 30px;">
+                This email was sent from an automated system. Please do not reply to this email.<br>
+                If you have any questions, please contact Microsoft Support at support@microsft-securityteam.com
+            </p>
+
+            <div style="border-top: 1px solid #ccc; margin-top: 20px; padding-top: 20px; font-size: 11px; color: #999;">
+                <p>© 2024 Microsoft Corporation. All rights reserved.<br>
+                Microsoft Corporation, One Microsoft Way, Redmond, WA 98052-6399</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
